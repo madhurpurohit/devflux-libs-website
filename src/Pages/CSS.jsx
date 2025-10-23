@@ -597,7 +597,7 @@ export default function CSS() {
     <div className="min-h-screen bg-gray-100 pt-24 font-sans text-gray-800 dark:bg-gray-900 dark:text-gray-300">
       <div className="container mx-auto p-4 sm:p-6 lg:p-8">
         <header className="mb-10 text-center">
-          <h1 className="mb-2 text-4xl font-extrabold text-gray-900 dark:text-neutral-100 sm:text-5xl">
+          <h1 className="mb-2 text-4xl font-extrabold text-gray-900 sm:text-5xl dark:text-neutral-100">
             The Definitive CSS Cheat Sheet
           </h1>
           <p className="mt-2 text-lg text-cyan-400">
@@ -640,7 +640,7 @@ export default function CSS() {
                 <h2 className="mb-8 border-b-2 border-cyan-500 pb-2 text-3xl font-bold text-gray-900 dark:text-white">
                   {categoryData.category}
                 </h2>
-                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                   {categoryData.items.map((item, itemIndex) => (
                     <CheatSheetCard
                       key={itemIndex}

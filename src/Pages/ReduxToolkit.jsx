@@ -208,17 +208,13 @@ export default function RTK() {
                 </h2>
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                   {categoryData.items.map((item, itemIndex) => (
-                    <div
+                    <GuideCard
                       key={itemIndex}
-                      className={item.fullWidth ? "md:col-span-2" : ""}
-                    >
-                      <GuideCard
-                        title={item.title}
-                        description={item.description || ""}
-                        code={item.code}
-                        link={item.link}
-                      />
-                    </div>
+                      title={item.title}
+                      description={item.description || ""}
+                      code={item.code}
+                      link={item.link}
+                    />
                   ))}
                 </div>
               </section>

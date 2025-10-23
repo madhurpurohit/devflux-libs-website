@@ -732,7 +732,7 @@ export default function Tailwind() {
                       title={item.title}
                       description={item.description}
                       code={item.code}
-                      link={item.link} // Pass the link prop
+                      link={item.link}
                     />
                   ))}
                 </div>
